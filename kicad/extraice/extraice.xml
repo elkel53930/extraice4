@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\dev\extraice4\elec\kicad\extraice\extraice.kicad_sch</source>
-    <date>2023/06/13 19:38:37</date>
-    <tool>Eeschema (7.0.0)</tool>
+    <source>/home/k-iida/dev/extraice4/kicad/extraice/extraice.kicad_sch</source>
+    <date>2023年07月06日 21時10分20秒</date>
+    <tool>Eeschema 7.0.5-7.0.5~ubuntu22.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -25,7 +25,7 @@
   </design>
   <components>
     <comp ref="C1">
-      <value>3225 25V 22uF</value>
+      <value>1608 35V 1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
@@ -789,16 +789,15 @@
       <tstamps>0e694450-7089-4191-a068-a585ca22cee8</tstamps>
     </comp>
     <comp ref="X1">
-      <value>ECS-2520MVLC-400-BN</value>
+      <value>830108208709</value>
       <footprint>Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm</footprint>
-      <datasheet>https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf</datasheet>
-      <libsource lib="Oscillator" part="ECS-2520MV-xxx-xx" description="HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD"/>
+      <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="extraice.kicad_sch"/>
-      <property name="ki_description" value="HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD"/>
-      <property name="ki_keywords" value="Crystal Clock Oscillator ECS SMD"/>
+      <property name="ki_description" value="Four pin crystal, GND on pins 2 and 4"/>
+      <property name="ki_keywords" value="quartz ceramic resonator oscillator"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>14e9fda9-166b-48cd-a5dc-c19fe626b92e</tstamps>
+      <tstamps>7a1c1c9a-3cf2-49dd-b769-e51d4ef696d5</tstamps>
     </comp>
   </components>
   <libparts>
@@ -908,6 +907,24 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="Crystal_GND24">
+      <description>Four pin crystal, GND on pins 2 and 4</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Device" part="LED">
       <description>Light emitting diode</description>
       <docs>~</docs>
@@ -990,25 +1007,6 @@
         <field name="Value">MountingHole</field>
         <field name="Datasheet">~</field>
       </fields>
-    </libpart>
-    <libpart lib="Oscillator" part="ECS-2520MV-xxx-xx">
-      <description>HCMOS Crystal Clock Oscillator, 2.5x2.0 mm SMD</description>
-      <docs>https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf</docs>
-      <footprints>
-        <fp>Oscillator*SMD*ECS*2520MV*2.5x2.0mm*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">X</field>
-        <field name="Value">ECS-2520MV-xxx-xx</field>
-        <field name="Footprint">Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm</field>
-        <field name="Datasheet">https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Tri-State" type="input"/>
-        <pin num="2" name="GND" type="power_in"/>
-        <pin num="3" name="OUT" type="output"/>
-        <pin num="4" name="VDD" type="power_in"/>
-      </pins>
     </libpart>
     <libpart lib="Regulator_Linear" part="XC6220B331MR">
       <description>1A, Low Drop-out Voltage Regulator, Fixed Output 3.3V, SOT-23-5</description>
@@ -1225,34 +1223,28 @@
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
     </library>
     <library logical="Device">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
     </library>
     <library logical="Driver_Motor">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Driver_Motor.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Driver_Motor.kicad_sym</uri>
     </library>
     <library logical="Mechanical">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
-    </library>
-    <library logical="Oscillator">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Oscillator.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
     </library>
     <library logical="Regulator_Linear">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>
     </library>
     <library logical="Sensor_Magnetic">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Sensor_Magnetic.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Sensor_Magnetic.kicad_sym</uri>
     </library>
     <library logical="Switch">
-      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Switch.kicad_sym</uri>
-    </library>
-    <library logical="micromouse">
-      <uri>C:/Users/elkel/OneDrive/ドキュメント/KiCad/6.0/symbols/micromouse.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -1306,7 +1298,6 @@
       <node ref="U7" pin="55" pinfunction="VDDA" pintype="power_in"/>
       <node ref="U7" pin="56" pinfunction="VDDA" pintype="power_in"/>
       <node ref="U9" pin="8" pinfunction="VCC" pintype="power_in"/>
-      <node ref="X1" pin="4" pinfunction="VDD" pintype="power_in"/>
     </net>
     <net code="3" name="+BATT">
       <node ref="C2" pin="2" pintype="passive"/>
@@ -1510,7 +1501,8 @@
       <node ref="U7" pin="57" pinfunction="GND" pintype="power_in"/>
       <node ref="U9" pin="4" pinfunction="GND" pintype="power_in"/>
       <node ref="U9" pin="9" pinfunction="GND" pintype="passive"/>
-      <node ref="X1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="X1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="X1" pin="4" pinfunction="4" pintype="passive"/>
     </net>
     <net code="37" name="Net-(D1-K)">
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
@@ -1644,12 +1636,12 @@
     <net code="68" name="Net-(U7-XTAL_N)">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="U7" pin="53" pinfunction="XTAL_N" pintype="passive"/>
-      <node ref="X1" pin="3" pinfunction="OUT" pintype="output"/>
+      <node ref="X1" pin="3" pinfunction="3" pintype="passive"/>
     </net>
     <net code="69" name="Net-(U7-XTAL_P)">
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="U7" pin="54" pinfunction="XTAL_P" pintype="passive"/>
-      <node ref="X1" pin="1" pinfunction="Tri-State" pintype="input"/>
+      <node ref="X1" pin="1" pinfunction="1" pintype="passive"/>
     </net>
     <net code="70" name="unconnected-(SW1-A-Pad1)">
       <node ref="SW1" pin="1" pinfunction="A" pintype="passive+no_connect"/>

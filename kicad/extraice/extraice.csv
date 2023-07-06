@@ -1,48 +1,34 @@
-Source:,C:\dev\extraice4\elec\kicad\extraice\extraice.kicad_sch,,,,,,
-Date:,2023/06/13 19:38:37,,,,,,
-Tool:,Eeschema (7.0.0),,,,,,
-Generator:,C:\Program Files\KiCad\7.0\bin\scripting\plugins/bom_csv_grouped_by_value.py,,,,,,
-Component Count:,71,,,,,,
-,,,,,,,
-Collated Components:,,,,,,,
-,,,,,,,
-Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,DNP
-1,1,C1,3225 25V 22uF,Device:C_Small,Capacitor_SMD:C_0603_1608Metric,~,
-2,3,"C2, C18, C21",2012 35V 10uF,Device:C_Small,Capacitor_SMD:C_0805_2012Metric,~,
-3,10,"C3, C5, C7, C8, C9, C12, C14, C15, C16, C19",0603 50V 0.1uF,Device:C_Small,Capacitor_SMD:C_0201_0603Metric,~,
-4,1,C4,3225 25V 22uF,Device:C_Small,Capacitor_SMD:C_1210_3225Metric,~,
-5,1,C10,1608 35V 1uF,Device:C_Small,Capacitor_SMD:C_0603_1608Metric,~,
-6,2,"C11, C13",1005 N/M,Device:C_Small,Capacitor_SMD:C_0402_1005Metric,~,
-7,4,"D1, D2, D3, D4",OSI5FU3A11C,Device:LED,Micromouse:OSI5FU3A11C,~,
-8,1,D5,1608 R LED,Device:LED,LED_SMD:LED_0603_1608Metric,~,
-9,1,D6,1608 G LED,Device:LED,LED_SMD:LED_0603_1608Metric,~,
-10,1,D7,1608 B LED,Device:LED,LED_SMD:LED_0603_1608Metric,~,
-11,4,"H1, H2, H3, H4",Φ1.4,Mechanical:MountingHole,Micromouse:Hole1.4,~,
-12,1,J1,Conn_01x02,Connector_Generic:Conn_01x02,Micromouse:B2B-ZH,~,
-13,2,"J3, J6",EncSide,Connector:Conn_01x06_Male,Micromouse:EncoderTerminal,~,
-14,2,"J4, J7",MainSide,Connector:Conn_01x06_Female,Micromouse:EncoderTerminal,~,
-15,1,J5,Conn_01x05,Connector_Generic:Conn_01x05,Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical,~,
-16,3,"J8, J9, J10",Conn_01x02,Connector_Generic:Conn_01x02,Micromouse:MotorPad,~,
-17,4,"Q1, Q2, Q3, Q4",L-31ROPT1C,Device:Q_Photo_NPN_CE,Micromouse:OSI5FU3A11C,~,
-18,4,"R1, R7, R10, R12",0603 470 1%,Device:R,Resistor_SMD:R_0201_0603Metric,~,
-19,4,"R4, R5, R6, R9",0603 1k,Device:R,Resistor_SMD:R_0201_0603Metric,~,
-20,4,"R8, R14, R15, R16",0603 10k,Device:R,Resistor_SMD:R_0201_0603Metric,~,
-21,1,R11,0603 6.2,Device:R,Resistor_SMD:R_0201_0603Metric,~,
-22,1,R13,0603 22k,Device:R,Resistor_SMD:R_0201_0603Metric,~,
-23,1,SW1,PCM12SMTR,Switch:SW_SPDT,Button_Switch_SMD:SW_SPDT_PCM12,~,
-24,1,SW2,B3U-1000P,Switch:SW_Push,Button_Switch_SMD:SW_SPST_B3U-1000P,~,
-25,1,U1,DG2034EDN,micromouse:DG2034EDN,Library:QFN-12-1EP_3x3mm_P0.5_EP1.15x1.15,,
-26,1,U2,BCR421,:BCR42x_1,Library:SOT-26,,
-27,1,U3,MUN12AD01-SG,micromouse:MUN12AD01-SG,Library:MUN12AD01-SG,,
-28,1,U4,MB85RC64TA,micromouse:MB85RC64TA,Library:LCC-8P-M04,,
-29,1,U5,LSM6DSR,micromouse:LSM6DSR,Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm,,
-30,1,U6,XC6221B302GR,Regulator_Linear:XC6220B331MR,Package_TO_SOT_SMD:SOT-23-5,https://www.torexsemi.com/file/xc6220/XC6220.pdf,
-31,1,U7,ESP32-S3-FN8,micromouse:ESP32-S3FN8,Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP4x4mm,,
-32,2,"U8, U12",AS5047D,Sensor_Magnetic:AS5047D,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,https://ams.com/documents/20143/36005/AS5047D_DS000394_2-00.pdf,
-33,3,"U9, U10, U11",DRV8837C,Driver_Motor:DRV8837C,Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,http://www.ti.com/lit/ds/symlink/drv8837c.pdf,
-34,1,X1,ECS-2520MVLC-400-BN,Oscillator:ECS-2520MV-xxx-xx,Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm,https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,Φ2x5ネオジム磁石,マグファイン,,,
+"#","Reference","Qty","Value","Footprint","DNP"
+"1","C1, C10","2","1608 35V 1uF","Capacitor_SMD:C_0603_1608Metric",""
+"2","C2, C18, C21","3","2012 35V 10uF","Capacitor_SMD:C_0805_2012Metric",""
+"3","C3, C5, C7, C8, C9, C12, C14, C15, C16, C19","10","0603 50V 0.1uF","Capacitor_SMD:C_0201_0603Metric",""
+"4","C4","1","3225 25V 22uF","Capacitor_SMD:C_1210_3225Metric",""
+"5","C11, C13","2","1005 N/M","Capacitor_SMD:C_0402_1005Metric",""
+"6","D1, D2, D3, D4","4","OSI5FU3A11C","Micromouse:OSI5FU3A11C",""
+"7","D5","1","1608 R LED","LED_SMD:LED_0603_1608Metric",""
+"8","D6","1","1608 G LED","LED_SMD:LED_0603_1608Metric",""
+"9","D7","1","1608 B LED","LED_SMD:LED_0603_1608Metric",""
+"10","H1, H2, H3, H4","4","Φ1.4","Micromouse:Hole1.4",""
+"11","J1","1","Conn_01x02","Micromouse:B2B-ZH",""
+"12","J3, J6","2","EncSide","Micromouse:EncoderTerminal",""
+"13","J4, J7","2","MainSide","Micromouse:EncoderTerminal",""
+"14","J5","1","Conn_01x05","Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical",""
+"15","J8, J9, J10","3","Conn_01x02","Micromouse:MotorPad",""
+"16","Q1, Q2, Q3, Q4","4","L-31ROPT1C","Micromouse:OSI5FU3A11C",""
+"17","R1, R7, R10, R12","4","0603 470 1%","Resistor_SMD:R_0201_0603Metric",""
+"18","R4, R5, R6, R9","4","0603 1k","Resistor_SMD:R_0201_0603Metric",""
+"19","R8, R14, R15, R16","4","0603 10k","Resistor_SMD:R_0201_0603Metric",""
+"20","R11","1","0603 6.2","Resistor_SMD:R_0201_0603Metric",""
+"21","R13","1","0603 22k","Resistor_SMD:R_0201_0603Metric",""
+"22","SW1","1","PCM12SMTR","Button_Switch_SMD:SW_SPDT_PCM12",""
+"23","SW2","1","B3U-1000P","Button_Switch_SMD:SW_SPST_B3U-1000P",""
+"24","U1","1","DG2034EDN","Library:QFN-12-1EP_3x3mm_P0.5_EP1.15x1.15",""
+"25","U2","1","BCR421","Library:SOT-26",""
+"26","U3","1","MUN12AD01-SG","Library:MUN12AD01-SG",""
+"27","U4","1","MB85RC64TA","Library:LCC-8P-M04",""
+"28","U5","1","LSM6DSR","Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm",""
+"29","U6","1","XC6221B302GR","Package_TO_SOT_SMD:SOT-23-5",""
+"30","U7","1","ESP32-S3-FN8","Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP4x4mm",""
+"31","U8, U12","2","AS5047D","Package_SO:TSSOP-14_4.4x5mm_P0.65mm",""
+"32","U9, U10, U11","3","DRV8837C","Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",""
+"33","X1","1","830108208709","Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm",""
