@@ -2,8 +2,8 @@
 <export version="E">
   <design>
     <source>/home/k-iida/dev/extraice4/kicad/extraice/extraice.kicad_sch</source>
-    <date>2023年07月06日 21時10分20秒</date>
-    <tool>Eeschema 7.0.5-7.0.5~ubuntu22.04.1</tool>
+    <date>2023年11月18日 18時49分08秒</date>
+    <tool>Eeschema 7.0.9-7.0.9~ubuntu22.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -496,6 +496,17 @@
       <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1da2b396-95c1-4649-b71a-3b456edb8e73</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>0603 10k</value>
+      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="extraice.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df37db28-ad2a-4491-a792-8d4c43164758</tstamps>
     </comp>
     <comp ref="R4">
       <value>0603 1k</value>
@@ -1129,7 +1140,7 @@
         <pin num="16" name="GPIO11" type="bidirectional"/>
         <pin num="17" name="GPIO12" type="bidirectional"/>
         <pin num="18" name="GPIO13" type="bidirectional"/>
-        <pin num="19" name="GPIO15" type="bidirectional"/>
+        <pin num="19" name="GPIO14" type="bidirectional"/>
         <pin num="20" name="VDD3P3_RTC" type="power_in"/>
         <pin num="21" name="XTAL_32K_P" type="bidirectional"/>
         <pin num="22" name="XTAL_32K_N" type="bidirectional"/>
@@ -1282,6 +1293,7 @@
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
@@ -1317,6 +1329,7 @@
     </net>
     <net code="5" name="/CHIP_PU">
       <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
       <node ref="U7" pin="4" pinfunction="CHIP_PU" pintype="input"/>
     </net>
     <net code="6" name="/CS_ENC_L">
@@ -1397,7 +1410,7 @@
     </net>
     <net code="24" name="/SEN_LED_ENA">
       <node ref="U2" pin="1" pinfunction="EN" pintype="input"/>
-      <node ref="U7" pin="19" pinfunction="GPIO15" pintype="bidirectional"/>
+      <node ref="U7" pin="19" pinfunction="GPIO14" pintype="bidirectional"/>
     </net>
     <net code="25" name="/SEN_LF">
       <node ref="Q2" pin="2" pinfunction="E" pintype="passive"/>
