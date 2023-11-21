@@ -1,3 +1,0 @@
-[submodule "fsw"]
-	path = fsw
-	url = https://github.com/elkel53930/micromouse-esp32
