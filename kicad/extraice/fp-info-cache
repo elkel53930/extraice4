@@ -1,4 +1,4 @@
-21476713929449497
+21485326397431663
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -60417,6 +60417,13 @@ QFN-12-1EP_3x3mm_P0.5_EP1.15x1.15
 13
 13
 Library
+SMT-0440-T-2-R
+
+
+0
+2
+2
+Library
 SOT-26
 
 
@@ -60438,6 +60445,13 @@ B2B-ZH
 2
 2
 Micromouse
+Battery
+
+
+0
+2
+2
+Micromouse
 EncoderTerminal
 
 
@@ -60446,6 +60460,13 @@ EncoderTerminal
 6
 Micromouse
 Hole1.4
+
+
+0
+0
+0
+Micromouse
+Hole1mm
 
 
 0
@@ -60486,6 +60507,20 @@ OSI5FU3A11C_Rev
 0
 2
 2
+Micromouse
+PhotoSensorL
+
+
+0
+4
+4
+Micromouse
+PhotoSensorR
+
+
+0
+4
+4
 Micromouse
 TFDU4301
 
